@@ -1,16 +1,51 @@
+/* tirou o display:flex não era necessário, porque quem organiza o layout é o .nav */
 .header{
-    display: flex;
+    width: 100%;
 }
 
+/* no nav adicionou o justify-content: space-between que empurra os elementos pra extremidades (bota nos canto e cria um espaço entre eles) */
+/* o width define quanto de espaçamento vai ter da borda */
 .nav{
-    width: 70%;
+    width: 85%;
     display: flex;
     align-items: center;
-    margin-bottom: 1.2rem;
+    justify-content: space-between;
     margin: 0 auto;
+    padding: 1rem 0;
 }
+
+/* css no logo-area com display:flex que coloca o nome e a logo um do lado do outro e o align items centraliza verticalmente, o gap cria o eespaço entre eles */
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* align-items: center centraliza o TF da logo */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    background-color: #636363;
+    width: 75px;
+    height: 75px;
+}
+
 .tf{
     color: aliceblue;
+}
+
+.name-logo{
+    color: rgb(117, 117, 117);
+}
+
+/* Define o espaço do ícone de perfil */
+.perfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #636363;
 }
 
 .linha{
@@ -18,18 +53,4 @@
   height: 0.13rem;
   background-color: #636363;
   margin: 0 auto;
-}
-
-.logo{
-    display: flex;
-    justify-content: center;
-    border-radius: 0.25rem;
-    background-color: #636363;
-    width: 75px;
-    height: 75px;
-}
-
-.name-logo{
-    padding-left: 1.5rem;
-
 }
