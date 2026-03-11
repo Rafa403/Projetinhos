@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    
+<!-- ////////////////////////////////////////////// -->
+<button onclick="abrirTela()">Nova tarefa</button>
+
+<div id="fundo" class="overlay">
+  <div class="tela">
 
     <div class="container">
         <h1>Minha Lista de Tarefas</h1>
@@ -17,10 +23,18 @@
             <input type="text" id="input-tarefa" placeholder="Digite uma tarefa...">
             <button id="botao-adicionar">Adicionar</button>
         </div>
+
         <p id="aviso-tarefa" style="color: #f76a6a; margin-top: 8px; display: none;"></p>
 
         <ul id="lista-tarefas"></ul>
     </div>
+
+    <button onclick="fecharTela()">Fechar</button>
+
+  </div>
+</div>
+
+<!-- /////////////////////////////////////////////////// -->
 
     <script src="script.js"></script>
 </body>
